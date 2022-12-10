@@ -9,7 +9,9 @@
 //     int try3 = (num % 10000) / 1000; // вторая
 //     int try4 = (num % 100) / 10; //четвертая
 
-//     //Console.Write($"{try1}, {try2}, {try3}, {try4},");  
+//     // int try5 = (num % 1000) / 100; //третья
+
+//     // Console.Write($"{try1}, {try2}, {try3}, {try4}, {try5}");  
     
 //     if (num < 100000 && num > 9999)
 //     {
@@ -64,20 +66,20 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-Console.WriteLine("Давайте кубы всех чисел до заданного Вами!");
-Console.Write("Введите число: ");
-int input = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Давайте кубы всех чисел до заданного Вами!");
+// Console.Write("Введите число: ");
+// int input = Convert.ToInt32(Console.ReadLine());
 
-void Cubes(int num)
-{
-    int num1 = 1;
-    while (num1 <= num)
-    {        
-        Console.Write(num1 * num1 * num1 + " ");
-        num1++;
-    }    
-}
+// void Cubes(int num)
+// {
+//     int num1 = 1;
+//     while (num1 <= num)
+//     {        
+//         Console.Write(num1 * num1 * num1 + " ");
+//         num1++;
+//     }    
+// }
 
-Console.Write(input  + " -> " );
-Cubes(input);
+// Console.Write(input  + " -> " );
+// Cubes(input);
 
