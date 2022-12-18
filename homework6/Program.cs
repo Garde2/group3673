@@ -54,7 +54,7 @@
 
 // void Crossing(int b1, int k1, int b2, int k2)
 // {
-//     int x = -(b1 - b2) / (k1 - k2);   //жесть!!!!!!!!
+//     int x = -(b1 - b2) / (k1 - k2);   //жесть!!!!!!!! глянула с сайта алгебры за 7 класс-_- я такое не могу сама составить
 //     int y = k1 * x + b1;
     
 //     Console.WriteLine($"Coordinates are: {x}, {y}");
