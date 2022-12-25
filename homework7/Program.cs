@@ -141,7 +141,7 @@ void Show2DArray(int [,] array)
 
 void CountingAverageSummInEveryRow(int [,] array, int m, int n)
 {   
-    int [] summ = new int[m];
+    double [] summ = new double[m];
     
     for(int i = 0; i < array.GetLength(0); i++)
     {
@@ -152,7 +152,7 @@ void CountingAverageSummInEveryRow(int [,] array, int m, int n)
     }
     foreach (double elem in summ)
     {
-        Console.Write($"Среднее арифм столбца {elem/n} ");
+        Console.Write("{0,6:F1}", elem/n);
     }
 }
 
