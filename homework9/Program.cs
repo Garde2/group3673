@@ -4,28 +4,28 @@
 
 // боже, как?!
 
-void Transliter(int m)
-{    
-    if (m / 2 > 0)
-    {
-        Transliter(m / 2);
-        Console.Write(m + " ");
-    }
-    else
-    {
-        Transliter(m % 2);
-        Console.Write(m + " ");
-    }
-}
+// void Transliter(int m)
+// {    
+//     if (m / 2 > 0)
+//     {
+//         Transliter(m / 2);
+//         Console.Write(m + " ");
+//     }
+//     else
+//     {
+//         Transliter(m % 2);
+//         Console.Write(m + " ");
+//     }
+// }
 
 
-// Console.WriteLine("Переведем число из десятичной системы в двоичную!");
-// Console.Write("Введите число: ");
-// int m = Convert.ToInt32(Console.ReadLine());
-int m = 78;
-Console.Write($"Ваше число - {m}, в двоичной системе это -> ");
+// // Console.WriteLine("Переведем число из десятичной системы в двоичную!");
+// // Console.Write("Введите число: ");
+// // int m = Convert.ToInt32(Console.ReadLine());
+// int m = 78;
+// Console.Write($"Ваше число - {m}, в двоичной системе это -> ");
 
-Transliter(m);
+// Transliter(m);
 
 
 // ============= Задача 60 =============
@@ -75,6 +75,31 @@ Transliter(m);
 // SummNumbersMN(m, n, temper);
 
 
+//============= или ===================
+
+int SummNumbersMN2(int m, int n)
+{
+    if ( m == 0 && n == 0) 
+    return 0;
+    if (m <= n) return m + SummNumbersMN2(m + 1, n);    
+    else       return 0;
+}
+
+
+Console.WriteLine("Найдём сумму натуральных элементов в промежутке от M до N!");
+Console.Write("Введите число M: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число N: ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.Write($"М = {m}, N = {n} => ");
+if (m > n)
+{
+    int temp = m;
+    m = n;
+    n = temp;    
+}
+int summ = SummNumbersMN2(m, n);
+Console.Write(summ);
 
 
 
